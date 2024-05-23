@@ -181,7 +181,7 @@ const ListarTarefa = () => {
                     <TableCell align="center">
                       <Button
                         variant="contained"
-                        color="success"
+                        color="info"
                         onClick={() => handleEditar(row.idTarefa)}
                       >
                         <EditIcon fontSize="small" />
@@ -203,7 +203,12 @@ const ListarTarefa = () => {
           </TableContainer>
         </CardContent>
         <CardActions>
-          <Button size="small" variant="outlined" onClick={handleOpen}>
+          <Button
+            size="small"
+            variant="outlined"
+            sx={{ background: "#f1ff26", color: "#000", fontWeight: "bold" }}
+            onClick={handleOpen}
+          >
             Criar Tarefa
           </Button>
           <Button size="small" variant="outlined">
